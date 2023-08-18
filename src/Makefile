@@ -11,18 +11,18 @@ INSTALL_DIR = bin
 ifeq ($(OS), Linux)
 	BUILD_DIR = build-ex-Desktop_Qt_5_15_2_GCC_64bit
 	APP_DIR=
-	LIBS = -lcheck -lm -lpthread -lsubunit -lrt
+	LIBS = -lm -lpthread -lsubunit -lrt -lGL -lGLU -lglut
 else ifeq ($(OS), Darwin)
 	BUILD_DIR = build-ex-Desktop_Qt_5_15_2_GCC_64bit
 	APP_DIR=3DSaper.app/Contents/MacOS
-	LIBS = -lcheck
+	LIBS = -framework OpenGL -framework GLUT
 endif
 
 all: clean build install
 
 build:
 	$(QMAKE) -o $(BUILD_DIR)/Makefile ./3DSaper/3dSaperQtOpengl.pro
-	make -C $(BUILD_DIR)
+	make -C $(BUILD_DIR) LFLAGS="$(LIBS)"
 
 rebuild: clean all
 

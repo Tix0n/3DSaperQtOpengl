@@ -44,7 +44,7 @@ void GameView::resizeGL(int w, int h) {
   float grid_diagonal =
       sqrtf(powf(gameLogic.get_gridSize() * (cube_size_ + spacing_), 2) * 5);
   float z_near = grid_diagonal * 0.1f;
-  float z_far = grid_diagonal * 2.0f;
+  float z_far = grid_diagonal * 4.0f;
   float aspect_ratio = float(w) / float(h);
   gluPerspective(fov, aspect_ratio, z_near, z_far);
 }
