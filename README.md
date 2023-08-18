@@ -23,7 +23,7 @@
 
 ![Меню](images/Menu.png)
 
-Процесс игры:
+Геймплей:
 
 ![Процесс игры](images/Gameplay.png)
 
