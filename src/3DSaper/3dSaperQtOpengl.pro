@@ -1,4 +1,11 @@
-QT       += core gui opengl widgets
+linux {
+  QT += core gui opengl widgets
+}
+
+macx {
+  QT += core gui openglwidgets
+}
+
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
