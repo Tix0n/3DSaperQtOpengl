@@ -11,7 +11,7 @@ INSTALL_DIR = bin
 ifeq ($(OS), Linux)
 	BUILD_DIR = build-ex-Desktop_Qt_5_15_2_GCC_64bit
 	APP_DIR=
-	LIBS = -lm -lpthread -lsubunit -lrt -lGL -lGLU -lglut
+	LIBS = -lm -lrt -lGL -lGLU -lglut
 else ifeq ($(OS), Darwin)
 	BUILD_DIR = build-ex-Desktop_Qt_5_15_2_GCC_64bit
 	APP_DIR=3DSaper.app/Contents/MacOS
