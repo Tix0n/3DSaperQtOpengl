@@ -35,4 +35,36 @@
 
 ![Обезвреженные мины](images/DefusedMines.png)
 
+## Как установить
+
+1. Убедитесь, что у вас установлены OpenGL, GLU и GLUT.
+  Установка на Linux:
+  ```
+  sudo apt-get install build-essential libgl1-mesa-dev libglu1-mesa-dev freeglut3-dev
+  ```
+  На macOs:
+  ```
+  xcode-select --install
+  ```
+
+3. Убедитесь что у вас есть Qt 5.15.2 и выше.
+  Установка на Linux:
+  ```
+  sudo apt install build-essential
+  sudo apt install qt5-default
+  ```
+  На macOs:
+  ```
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  brew install qt@5.15
+  ```
+
+5. Склонируйте репозиторий
+
+6. Соберите проект при помощи команды *make*
+
+7. Перейдите в папку bin и запустите игру *./3dSaper*
+
+8. Вы великолепны!
+
 
