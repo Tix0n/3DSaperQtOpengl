@@ -5,9 +5,7 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 CONFIG += c++17
 
 LIBS += -lglut -lGLU -lGL \
-#-lfreetype
 
-#INCLUDEPATH += /usr/include/freetype2
 
 # You can make your code fail to compile if it uses deprecated APIs.
 # In order to do so, uncomment the following line.
@@ -19,7 +17,6 @@ SOURCES += \
     saper2d.cpp \
     saper3dlogic.cpp \
     saper3dview.cpp \
-#    freetype.cpp
 
 HEADERS += \
     mainwindow.h \
@@ -27,7 +24,6 @@ HEADERS += \
     saper2d.h \
     saper3dlogic.h \
     saper3dview.h \
-#    freetype.h
 
 
 FORMS += \
