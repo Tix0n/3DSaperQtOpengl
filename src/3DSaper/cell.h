@@ -1,5 +1,5 @@
-#ifndef CELL_H
-#define CELL_H
+#ifndef SRC_CELL_H_
+#define SRC_CELL_H_
 
 struct Cell {
   bool has_mine;
@@ -9,4 +9,4 @@ struct Cell {
   int neighboring_mines;
 };
 
-#endif  // CELL_H
+#endif  // SRC_CELL_H_
