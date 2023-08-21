@@ -53,6 +53,12 @@
   sudo apt install build-essential
   sudo apt install qt5-default
   ```
+  На Ubuntu 22.04 понадобится другая команда:
+  ```
+  sudo apt install build-essential
+  sudo apt install qtbase5-dev qt5-qmake
+  ```
+
   На macOs:
   ```
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
